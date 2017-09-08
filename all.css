@@ -1,9 +1,121 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Quicksand');
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+html body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.block {
+  display: block;
+  float: left;
+}
+
+.button {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  color: black;
+  text-decoration: none;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: arial;
+  margin: 0px;
 }
 
 body {
   font-family: arial;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav {
+  justify-content: center;
+  list-style: none;
+  padding: 5%;
+}
+
+ul.nav {
+  margin: 0px;
+}
+
+.nav-item {
+  display: block;
+  float: left;
+}
+
+.nav-link {
+  margin: 10px;
+}
+
+.nav-link.active, .nav-link:hover {
+  color: white;
+  background-color: #003399;
+}
+
+h1.page-title {
+  font-family: sans-serif;
+  margin-top: 10%;
+  font-size: 500%;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#slogan {
+  padding: 15px;
+  color: #93959b;
+  font-size: 25px;
+  font-family: monospace;
+  text-align: center;
+}
+
+section {
+  display: block;
+  margin: 5%;
+  padding: 20px;
+  justify-content: center;
+  height: auto;
+}
+
+section div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#education {
+  display: flex;
+}
+
+#education img{
+  width: 75%;
+}
+
+#education h2 {
+  margin-top: 10px;
+}
+
+#education h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+}
+
+#education a {
+  margin-top: 10px;
+  display: block;
+  background-color: #d5d8e2;
+}
+
+#education a:hover {
+  background-color: #bfc2cc;
 }
