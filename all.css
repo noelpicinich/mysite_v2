@@ -65,8 +65,8 @@ ul.nav {
 
 h1.page-title {
   font-family: sans-serif;
-  margin-top: 10%;
-  font-size: 500%;
+  margin-top: 7%;
+  font-size: 700%;
   font-weight: lighter;
   text-align: center;
 }
@@ -74,7 +74,7 @@ h1.page-title {
 #slogan {
   padding: 15px;
   color: #93959b;
-  font-size: 25px;
+  font-size: 40px;
   font-family: monospace;
   text-align: center;
 }
@@ -89,9 +89,14 @@ section {
 
 section div {
   display: inline-block;
-  vertical-align: middle;
 }
 
+.section-title {
+  padding: 20px;
+  font-size: 200%;
+  font-weight: lighter;
+  text-align: center;
+}
 #education {
   display: flex;
 }
@@ -118,4 +123,56 @@ section div {
 
 #education a:hover {
   background-color: #bfc2cc;
+}
+
+ul#experience {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.top {
+  height: 100%;
+}
+.experience-item {
+  margin: 1%;
+  padding: 15px;
+  display: block;
+  float: left;
+  width: 300px;
+  text-align: center;
+}
+
+.experience-item .border {
+  padding: 15px;
+  height: 280px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #003399;
+  border-radius: 20px;
+}
+
+.experience-item .border-top {
+  height: 200px;
+}
+
+#experience .w-150 {
+  height: 125px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+#experience h2, #experience h3 {
+  font-weight: lighter;
+}
+
+#experience a {
+  margin-top: 20px;
+  display: block;
+  background-color: #aec4ef;
+}
+
+#experience a:hover {
+  background-color: #86a9ef;
 }
