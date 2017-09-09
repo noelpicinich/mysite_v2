@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Quicksand');
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('./fonts/Lobster/Lobster-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Raleway'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-Regular.ttf'); /*URL to font*/
+}
+
 html {
   margin: 0px;
   padding: 0px;
@@ -24,10 +32,11 @@ html body {
   border-radius: 8px;
   color: black;
   text-decoration: none;
+  font-family: 'Raleway';
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: arial;
+  font-family: 'Raleway';
   margin: 0px;
 }
 
@@ -56,6 +65,7 @@ ul.nav {
 
 .nav-link {
   margin: 10px;
+  font-family: 'Raleway';
 }
 
 .nav-link.active, .nav-link:hover {
@@ -64,9 +74,9 @@ ul.nav {
 }
 
 h1.page-title {
-  font-family: sans-serif;
+  font-family: 'Raleway';
   margin-top: 7%;
-  font-size: 700%;
+  font-size: 600%;
   font-weight: lighter;
   text-align: center;
 }
@@ -92,9 +102,10 @@ section div {
 
 .section-title {
   padding: 20px;
-  font-size: 300%;
+  font-size: 400%;
   font-weight: lighter;
   text-align: center;
+  font-family: 'Lobster';
 }
 
 #education {
@@ -234,6 +245,23 @@ ul#campus {
   border-width: 8px;
   margin-left: 8%;
   margin-right: 8%;
+}
+
+#memberships {
+  display: flex;
+  justify-content: center;
+}
+
+#memberships a {
+  margin: 5%;
+}
+
+#memberships img {
+  max-height: 150px;
+}
+
+#memberships #swe {
+  padding-top: 30px;
 }
 
 footer {
