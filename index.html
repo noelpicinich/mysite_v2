@@ -7,7 +7,7 @@
   <title>Noel Picinich</title>
 </head>
 
-<body>
+<body id="top">
   <nav>
     <ul class="nav">
       <li class="nav-item"><a class="nav-link button active" href="index.html">Home</a></li>
@@ -36,7 +36,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="experience-section">
     <h1 class="section-title">Professional Experience</h1>
     <ul id="experience">
       <li class="experience-item">
@@ -83,38 +83,26 @@
   </section>
 
   <section>
-    <h2>Activities/Projects</h2>
-    <ul>
-      <li>
+    <h1 class="section-title">On Campus</h1>
+    <ul id="campus">
+      <li class="campus-item">
         <!-- IMG Source: rights granted by CUAUV -->
-        <img src="./images/cuauv.png" alt="CUAUV logo"/>
-        <h3>Cornell Autonomous Underwater Vehicle Project Team</h3>
-        <h4><i>Software Subteam Member</i></h4>
-        <ul>
-          <li>Writing high-level Python code for the submarine to complete
-            various tasks in an underwater arena</li>
-          <li>Refining the team’s software stack through semesterly projects
-            related to missions, vision, control, and navigation</li>
-          <li><a href="projects.html#auv">See Projects</a></li>
-        </ul>
-        <br/>
+        <img src="./images/code.png" alt="code icon"/>
+        <h2>Cornell University Autonomous Underwater Vehicle Project Team</h2>
+        <h3><i>Software Subteam Member</i></h3>
+        <a class="button" href="projects.html#auv">See Projects</a>
       </li>
-      <li>
+      <li class="campus-item">
         <!-- IMG Source: rights granted by Science Olympiad at Cornell -->
-        <img src="./images/scioly.png" alt="Cornell Science Olympiad logo"/>
-        <h3>Science Olympiad at Cornell</h3>
-        <h4><i>Ezra Software Developer, Web Developer, Director of Build Events</i></h4>
-        <ul>
-          <li>Optimized the new Cornell scoring software, Ezra, that is used at
-            tournaments across the country</li>
-          <li>Organized and ran engineering-oriented events at Cornell’s Division
-            C Science Olympiad Invitational</li>
-          <li><a href="projects.html#scioly">See more</a></li>
-        </ul>
-        <br/>
+        <img src="./images/volunteer.png" alt="volunteer icon"/>
+        <h2>Science Olympiad at Cornell</h2>
+        <h3 id="scioly"><i>Software Developer, <br/>Director of Build Events</i></h3>
+        <a class="button" href="projects.html#scioly">See more</a>
       </li>
     </ul>
   </section>
+
+  <hr id="campus-to-skills"/>
 
   <section>
     <h2>Computer Skills</h2>
@@ -144,13 +132,22 @@
   </section>
 
   <footer>
-    <hr/>
-    <h4>Get in touch!</h4>
-    <!-- Source of github.png, mail.png, facebook.png: Icons8 (https://icons8.com) -->
-    <a href="https://github.com/noelpicinich"><img src="./images/github.png" alt="Github"/></a>
-    <a href="mailto:nmp53@cornell.edu"><img src="./images/mail.png" alt="Mail"/></a>
-    <a href="https://www.facebook.com/noel.picinich.9"><img src="./images/facebook.png"
-      alt="Facebook"/></a>
+    <a id="top-btn" href="index.html#top"><img src="./images/top.png" alt="Scroll Up"/></a>
+    <a id="email" href="mailto:nmp53@cornell.edu">nmp53@gmail.com</a>
+    <div>
+      <!-- Source of github.png, mail.png, facebook.png: Icons8 (https://icons8.com) -->
+      <a class="media" href="https://www.facebook.com/noel.picinich.9"><img src="./images/facebook.png" alt="Facebook"/></a>
+      <a class="media" href="https://www.linkedin.com/in/noel-picinich-4a9972121/"><img src="./images/linkedin.png" alt="LinkedIn"/></a>
+      <a class="media" href="https://bitbucket.org/noelmpicinich/"><img src="./images/bitbucket.png" alt="Bitbucket"/></a>
+    </div>
+    <nav>
+      <ul>
+        <li class="nav-item"><a class="footer-nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="footer-nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="footer-nav-link" href="projects.html">PROJECTS</a></li>
+        <li class="nav-item"><a class="footer-nav-link" href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
   </footer>
 </body>
 

@@ -79,10 +79,9 @@ h1.page-title {
   text-align: center;
 }
 
-section {
+section, footer {
   display: block;
-  margin: 5%;
-  padding: 20px;
+  padding: 5%;
   justify-content: center;
   height: auto;
 }
@@ -93,10 +92,11 @@ section div {
 
 .section-title {
   padding: 20px;
-  font-size: 200%;
+  font-size: 300%;
   font-weight: lighter;
   text-align: center;
 }
+
 #education {
   display: flex;
 }
@@ -148,13 +148,20 @@ ul#experience {
   padding: 15px;
   height: 280px;
   border-width: 7px;
-  border-style: solid;
-  border-color: #003399;
   border-radius: 20px;
+  background-color: white;
 }
 
 .experience-item .border-top {
   height: 200px;
+}
+
+section#experience-section {
+  background-color: #003399;
+}
+
+#experience-section h1 {
+  color: #e0eaff;
 }
 
 #experience .w-150 {
@@ -175,4 +182,116 @@ ul#experience {
 
 #experience a:hover {
   background-color: #86a9ef;
+}
+
+ul#campus {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.campus-item {
+  margin: 1%;
+  padding: 15px;
+  display: block;
+  float: left;
+  width: 40%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.campus-item img {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+#campus h2, #campus h3 {
+  font-weight: lighter;
+  padding-bottom: 5px;
+}
+
+#campus a {
+  margin-top: 10px;
+  display: block;
+  color: #86a9ef;
+  font-size: 20px;
+}
+
+#campus a:hover {
+  color: #003399;
+}
+
+#campus #scioly {
+  padding-bottom: 11px;
+}
+
+#campus-to-skills {
+  border-style: dotted;
+  border-color: #003399;
+  border-bottom: 0px;
+  border-width: 8px;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+footer {
+  background-color: #e8ebf2;
+}
+
+footer #top-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer #email {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: lighter;
+  font-family: monospace;
+  font-size: 150%;
+  color: #686a75;
+}
+
+footer #email:hover {
+  color: black;
+}
+
+footer img {
+  display: block;
+  float: left;
+  height: 30px;
+}
+
+footer div {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+footer a.media {
+  padding: 15px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer nav .nav-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+footer nav .footer-nav-link {
+  text-decoration: none;
+  color: #686a75;
+}
+
+footer nav .footer-nav-link:hover {
+  color: black;
 }
