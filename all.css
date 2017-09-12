@@ -70,22 +70,15 @@ ul.nav {
 
 .nav-link.active, .nav-link:hover {
   color: white;
-  background-color: #003399;
-}
+  background-color: rgba(0, 51, 153, 1);
+  border-radius: 8px;
+  }
 
 h1.page-title {
   font-family: 'Raleway';
   margin-top: 7%;
   font-size: 600%;
   font-weight: lighter;
-  text-align: center;
-}
-
-#slogan {
-  padding: 15px;
-  color: #93959b;
-  font-size: 40px;
-  font-family: monospace;
   text-align: center;
 }
 
@@ -107,6 +100,18 @@ section div {
   text-align: center;
   font-family: 'Lobster';
 }
+
+/* Home Page Style */
+
+#slogan {
+  padding: 15px;
+  color: #93959b;
+  font-size: 40px;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Home Page Style: Education Section */
 
 #education {
   display: flex;
@@ -136,6 +141,8 @@ section div {
   background-color: #bfc2cc;
 }
 
+/* Home Page Style: Experience Section */
+
 ul#experience {
   padding: 0px;
   list-style: none;
@@ -143,9 +150,6 @@ ul#experience {
   justify-content: center;
 }
 
-.top {
-  height: 100%;
-}
 .experience-item {
   margin: 1%;
   padding: 15px;
@@ -195,6 +199,8 @@ section#experience-section {
   background-color: #86a9ef;
 }
 
+/* Home Page Style: Campus Section */
+
 ul#campus {
   padding: 0px;
   list-style: none;
@@ -238,7 +244,7 @@ ul#campus {
   padding-bottom: 11px;
 }
 
-#campus-to-skills {
+#dot-divider {
   border-style: dotted;
   border-color: #003399;
   border-bottom: 0px;
@@ -246,6 +252,8 @@ ul#campus {
   margin-left: 8%;
   margin-right: 8%;
 }
+
+/* Home Page Style: Memberships Section */
 
 #memberships {
   display: flex;
@@ -258,11 +266,14 @@ ul#campus {
 
 #memberships img {
   max-height: 150px;
+  max-width: 200px;
 }
 
 #memberships #swe {
   padding-top: 30px;
 }
+
+/* Footer Style */
 
 footer {
   background-color: #e8ebf2;
@@ -306,6 +317,7 @@ footer a.media {
 }
 
 footer nav ul {
+  padding-left: 0px;
   display: flex;
   justify-content: center;
 }
@@ -316,10 +328,189 @@ footer nav .nav-item {
 }
 
 footer nav .footer-nav-link {
+  font-family: 'Raleway';
   text-decoration: none;
   color: #686a75;
 }
 
 footer nav .footer-nav-link:hover {
   color: black;
+}
+
+/* About Page Style: About Section */
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+#about div#about-wrapper {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+}
+
+#about img, #about div {
+  padding: 30px;
+  max-width: 80%;
+}
+
+#about div#about-wrapper div p {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #aec4ef;
+}
+
+#home {
+  font-size: 200%;
+}
+
+#about p {
+  font-family: 'Raleway';
+  font-size: 150%;
+}
+
+/* About Page Style: Sponser Section */
+
+#sponsers h1 {
+  margin-bottom: 30px;
+}
+
+.sponsers-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#sponsers img {
+  display: block;
+  float: left;
+  width: 300px;
+}
+
+#sponsers a {
+  margin: 3%;
+}
+
+/* Project Page */
+
+#silver, #nmb, #auv, #itwomen, #scioly {
+  /*margin-top: 10%;
+  margin-left: 25%;
+  margin-right: 25%;*/
+  min-width: 630px;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-col {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.project {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: #86a9ef;
+}
+
+.project-item {
+  display: flex;
+  float: left;
+}
+
+.project-item img {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  max-height: 130px;
+  width: auto;
+}
+
+.project-item div {
+  margin-top: 30px;
+}
+
+.project-item p {
+  display: block;
+  float: left;
+}
+
+.project-item ul {
+  list-style: none;
+  padding-left: 0px;
+  display: block;
+  float: left;
+}
+
+.project-item li {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  font-family: 'Raleway';
+}
+
+.project-item ul.list-2 {
+  padding-left: 20px;
+  max-width: 500px;
+}
+
+.project-item ul.list-1 {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #aec4ef;
+}
+
+.project-link {
+  text-decoration: none;
+  color: #003399;
+}
+
+.project-link:hover {
+  color: #86a9ef;
+}
+.project-item ul.list-2 li a {
+  text-decoration: none;
+}
+
+#auv div div img {
+  margin-top: 30px;
+  height: 75px;
+  width: auto;
+}
+
+#itwomen div div img {
+  margin-top: 20px;
+  height: 100px;
+  width: auto;
+}
+
+/* Contact Page */
+
+#contact-subtitle {
+  padding: 15px;
+  color: #93959b;
+  font-size: 30px;
+  font-family: monospace;
+  text-align: center;
+}
+
+#contact-media {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-media a {
+  margin: 5%;
+}
+
+#contact-media img {
+  max-height: 150px;
+  max-width: 200px;
 }
