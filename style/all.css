@@ -1,10 +1,18 @@
 @font-face {
-    font-family: 'Lobster'; /*a name to be used later*/
-    src: url('./fonts/Lobster/Lobster-Regular.ttf'); /*URL to font*/
-}
-@font-face {
     font-family: 'Raleway'; /*a name to be used later*/
     src: url('./fonts/Raleway/Raleway-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Raleway-Bold'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-SemiBold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Julius_Sans_One'; /*a name to be used later*/
+    src: url('./fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('./fonts/Lobster/Lobster-Regular.ttf'); /*URL to font*/
 }
 
 html {
@@ -29,7 +37,6 @@ html body {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 8px;
   color: black;
   text-decoration: none;
   font-family: 'Raleway';
@@ -69,17 +76,16 @@ ul.nav {
 }
 
 .nav-link.active, .nav-link:hover {
-  color: white;
-  background-color: rgba(0, 51, 153, 1);
-  border-radius: 8px;
-  }
+  border-bottom: double 10px #ff9a02;
+}
 
 h1.page-title {
-  font-family: 'Raleway';
+  font-family: 'Raleway-Bold';
   margin-top: 7%;
   font-size: 600%;
   font-weight: lighter;
   text-align: center;
+  color: #25304f;
 }
 
 section, footer {
@@ -99,15 +105,16 @@ section div {
   font-weight: lighter;
   text-align: center;
   font-family: 'Lobster';
+  color: #25304f;
 }
 
 /* Home Page Style */
 
 #slogan {
   padding: 15px;
-  color: #93959b;
+  color: #919dbf;
   font-size: 40px;
-  font-family: monospace;
+  font-family: 'Julius_Sans_One';
   text-align: center;
 }
 
@@ -134,11 +141,11 @@ section div {
 #education a {
   margin-top: 10px;
   display: block;
-  background-color: #d5d8e2;
+  background-color: #d6dff9;
 }
 
 #education a:hover {
-  background-color: #bfc2cc;
+  background-color: #b8c1db;
 }
 
 /* Home Page Style: Experience Section */
@@ -163,7 +170,6 @@ ul#experience {
   padding: 15px;
   height: 280px;
   border-width: 7px;
-  border-radius: 20px;
   background-color: white;
 }
 
@@ -172,7 +178,7 @@ ul#experience {
 }
 
 section#experience-section {
-  background-color: #003399;
+  background-color: #25304f;
 }
 
 #experience-section h1 {
@@ -192,11 +198,11 @@ section#experience-section {
 #experience a {
   margin-top: 20px;
   display: block;
-  background-color: #aec4ef;
+  background-color: #d6dff9;
 }
 
 #experience a:hover {
-  background-color: #86a9ef;
+  background-color: #b8c1db;
 }
 
 /* Home Page Style: Campus Section */
@@ -244,11 +250,11 @@ ul#campus {
   padding-bottom: 11px;
 }
 
-#dot-divider {
-  border-style: dotted;
-  border-color: #003399;
+.line-divider {
+  border-style: solid;
+  border-color: #ff9a02;
   border-bottom: 0px;
-  border-width: 8px;
+  border-width: 5px;
   margin-left: 8%;
   margin-right: 8%;
 }
@@ -293,11 +299,11 @@ footer #email {
   font-weight: lighter;
   font-family: monospace;
   font-size: 150%;
-  color: #686a75;
+  color: #667293;
 }
 
 footer #email:hover {
-  color: black;
+  color: #25304f;
 }
 
 footer img {
@@ -330,11 +336,27 @@ footer nav .nav-item {
 footer nav .footer-nav-link {
   font-family: 'Raleway';
   text-decoration: none;
-  color: #686a75;
+  color: #667293;
 }
 
 footer nav .footer-nav-link:hover {
-  color: black;
+  color: #25304f;
+}
+
+footer #facebook:hover {
+  content: url('../images/facebookDark.png');
+}
+
+footer #linkedin:hover {
+  content: url('../images/linkedinDark.png');
+}
+
+footer #bitbucket:hover {
+  content: url('../images/bitbucketDark.png');
+}
+
+footer #top-img:hover {
+  content: url('../images/top2.png');
 }
 
 /* About Page Style: About Section */
@@ -352,14 +374,18 @@ footer nav .footer-nav-link:hover {
 }
 
 #about img, #about div {
+  margin: auto;
   padding: 30px;
   max-width: 80%;
 }
 
+#about img {
+  width: 250px;
+  border-radius: 50%;
+}
 #about div#about-wrapper div p {
   padding: 20px;
-  border-radius: 10px;
-  background-color: #aec4ef;
+  background-color: #d6dff9;
 }
 
 #home {
@@ -374,10 +400,12 @@ footer nav .footer-nav-link:hover {
 /* About Page Style: Sponser Section */
 
 #sponsers h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .sponsers-wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
 }
@@ -411,14 +439,9 @@ footer nav .footer-nav-link:hover {
 }
 
 .project {
-  margin-top: 35px;
-  margin-bottom: 35px;
   padding-left: 20px;
   padding-right: 20px;
-  border-width: 5px;
-  border-radius: 10px;
-  border-style: dashed;
-  border-color: #86a9ef;
+  background-color: white;
 }
 
 .project-item {
@@ -464,8 +487,7 @@ footer nav .footer-nav-link:hover {
 
 .project-item ul.list-1 {
   padding: 20px;
-  border-radius: 10px;
-  background-color: #aec4ef;
+  background-color: #d6dff9;
 }
 
 .project-link {
@@ -478,6 +500,10 @@ footer nav .footer-nav-link:hover {
 }
 .project-item ul.list-2 li a {
   text-decoration: none;
+}
+
+#silver {
+  margin-top: 40px;
 }
 
 #auv div div img {
@@ -500,9 +526,9 @@ footer nav .footer-nav-link:hover {
 
 #contact-subtitle {
   padding: 15px;
-  color: #93959b;
+  color: #919dbf;
   font-size: 30px;
-  font-family: monospace;
+  font-family: 'Julius_Sans_One';
   text-align: center;
 }
 
@@ -518,4 +544,30 @@ footer nav .footer-nav-link:hover {
 #contact-media img {
   max-height: 150px;
   max-width: 200px;
+}
+
+/* Courses Page */
+
+#courses a {
+  margin-top: 10px;
+  margin-bottom: 25px;
+  display: inline-block;
+  background-color: #d6dff9;
+}
+
+#courses a:hover {
+  background-color: #b8c1db;
+}
+
+#courses div div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#courses div {
+  display: flex;
+  justify-content: center;
 }
