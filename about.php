@@ -8,14 +8,10 @@
 </head>
 
 <body id="top">
-  <nav>
-    <ul class="nav">
-      <li class="nav-item"><a class="nav-link button" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link button active" href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link button" href="projects.html">Projects</a></li>
-      <li class="nav-item"><a class="nav-link button" href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <?php
+   include "includes/nav.php";
+  ?>
+
   <header>
     <h1 class="page-title">About Me</h1>
     <!-- Source of img.png: Personal Picture -->
@@ -57,25 +53,9 @@
       </div>
   </section>
 
-
-  <footer>
-    <a id="top-btn" href="index.html#top"><img id="top-img" src="./images/top.png" alt="Scroll Up"/></a>
-    <a id="email" href="mailto:nmp53@cornell.edu">nmp53@cornell.edu</a>
-    <div>
-      <!-- Source of github.png, mail.png, facebook.png: Icons8 (https://icons8.com) -->
-      <a class="media" href="https://www.facebook.com/noel.picinich.9"><img id="facebook" src="./images/facebook.png" alt="Facebook"/></a>
-      <a class="media" href="https://www.linkedin.com/in/noel-picinich-4a9972121/"><img id="linkedin" src="./images/linkedin.png" alt="LinkedIn"/></a>
-      <a class="media" href="https://bitbucket.org/noelmpicinich/"><img id="bitbucket" src="./images/bitbucket.png" alt="Bitbucket"/></a>
-    </div>
-    <nav>
-      <ul>
-        <li class="nav-item"><a class="footer-nav-link" href="index.html">HOME</a></li>
-        <li class="nav-item"><a class="footer-nav-link" href="about.html">ABOUT</a></li>
-        <li class="nav-item"><a class="footer-nav-link" href="projects.html">PROJECTS</a></li>
-        <li class="nav-item"><a class="footer-nav-link" href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </footer>
+  <?php
+   include "includes/foot.php";
+  ?>
 </body>
 
 </html>

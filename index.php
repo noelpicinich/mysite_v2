@@ -8,14 +8,9 @@
 </head>
 
 <body id="top">
-  <nav>
-    <ul class="nav">
-      <li class="nav-item"><a class="nav-link button active" href="index.html">Home</a></li>
-      <li class="nav-item"><a class="nav-link button" href="about.html">About</a></li>
-      <li class="nav-item"><a class="nav-link button" href="projects.html">Projects</a></li>
-      <li class="nav-item"><a class="nav-link button" href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <?php
+   include "includes/nav.php";
+  ?>
 
   <header>
     <h1 class="page-title">Noel Picinich</h1>
@@ -31,7 +26,7 @@
       <h2>Cornell University</h2>
       <h3><i>Batchelor of Science in Computer Science</i> <br/> expected May 2020</h3>
       <div>
-        <a class="button" href="courses.html">See Courses</a>
+        <a class="button" href="courses.php">See Courses</a>
       </div>
     </div>
   </section>
@@ -48,7 +43,7 @@
             <h3><i>Software Engineering Intern</i></h3>
           </div>
           <div>
-            <a class="button" href="projects.html#tsl">See Projects</a>
+            <a class="button" href="projects.php#tsl">See Projects</a>
           </div>
         </div>
       </li>
@@ -62,7 +57,7 @@
             <h3><i>Freelance Web Developer</i></h3>
           </div>
           <div>
-            <a class="button" href="projects.html#nmb">See Projects</a>
+            <a class="button" href="projects.php#nmb">See Projects</a>
           </div>
         </div>
       </li>
@@ -75,7 +70,7 @@
             <h3><i>Girls Coding Instructor</i></h3>
           </div>
           <div>
-            <a class="button" href="projects.html#itwomen">See Projects</a>
+            <a class="button" href="projects.php#itwomen">See Projects</a>
           </div>
         </div>
       </li>
@@ -90,14 +85,14 @@
         <img src="./images/code.png" alt="code icon"/>
         <h2>Cornell University Autonomous Underwater Vehicle Project Team</h2>
         <h3><i>Software Subteam Member</i></h3>
-        <a class="button" href="projects.html#auv">See Projects</a>
+        <a class="button" href="projects.php#auv">See Projects</a>
       </li>
       <li class="campus-item">
         <!-- IMG Source: rights granted by Science Olympiad at Cornell -->
         <img src="./images/volunteer.png" alt="volunteer icon"/>
         <h2>Science Olympiad at Cornell</h2>
         <h3><i>Software Developer, <br/>Director of Build Events</i></h3>
-        <a class="button" href="projects.html#scioly">See more</a>
+        <a class="button" href="projects.php#scioly">See more</a>
       </li>
     </ul>
   </section>
@@ -108,30 +103,16 @@
   <section>
     <h1 class="section-title">Memberships</h1>
     <div id="memberships">
-      <a href="http://acsu.cornell.edu/"><img src="./images/acsu.png" alt="ACSU"/></a>
-      <a href="https://wicc.acm.org/index.php"><img src="./images/wicc.png" alt="WICC"/></a>
-      <a id="swe" href="http://swe.cornell.edu/"><img src="./images/swe2.png" alt="SWE"/></a>
+      <a target="_blank" href="http://acsu.cornell.edu/"><img src="./images/acsu.png" alt="ACSU"/></a>
+      <a target="_blank" href="https://wicc.acm.org/index.php"><img src="./images/wicc.png" alt="WICC"/></a>
+      <a target="_blank" id="swe" href="http://swe.cornell.edu/"><img src="./images/swe2.png" alt="SWE"/></a>
     </div>
   </section>
 
-  <footer>
-    <a id="top-btn" href="index.html#top"><img id="top-img" src="./images/top.png" alt="Scroll Up"/></a>
-    <a id="email" href="mailto:nmp53@cornell.edu">nmp53@cornell.edu</a>
-    <div>
-      <!-- Source of github.png, mail.png, facebook.png: Icons8 (https://icons8.com) -->
-      <a class="media" href="https://www.facebook.com/noel.picinich.9"><img id="facebook" src="./images/facebook.png" alt="Facebook"/></a>
-      <a class="media" href="https://www.linkedin.com/in/noel-picinich-4a9972121/"><img id="linkedin" src="./images/linkedin.png" alt="LinkedIn"/></a>
-      <a class="media" href="https://bitbucket.org/noelmpicinich/"><img id="bitbucket" src="./images/bitbucket.png" alt="Bitbucket"/></a>
-    </div>
-    <nav>
-      <ul>
-        <li class="nav-item"><a class="footer-nav-link" href="index.html">HOME</a></li>
-        <li class="nav-item"><a class="footer-nav-link" href="about.html">ABOUT</a></li>
-        <li class="nav-item"><a class="footer-nav-link" href="projects.html">PROJECTS</a></li>
-        <li class="nav-item"><a class="footer-nav-link" href="contact.html">CONTACT</a></li>
-      </ul>
-    </nav>
-  </footer>
+  <?php
+   include "includes/foot.php";
+  ?>
+
 </body>
 
 </html>

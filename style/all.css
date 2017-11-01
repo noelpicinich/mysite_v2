@@ -542,9 +542,91 @@ footer #top-img:hover {
 }
 
 #contact-media img {
-  max-height: 150px;
-  max-width: 200px;
+  max-height: 100px;
+  max-width: 150px;
 }
+
+#form-wrapper, #submission-message-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0px;
+}
+
+#form-wrapper form, #submission-message-wrapper h3 {
+  padding: 5%;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #25304f;
+  display: block;
+  width: 50%;
+  border: double 10px #ff9a02;
+}
+
+#form-wrapper form div {
+  width: 100%;
+  margin-bottom: 4%;
+  display: flex;
+}
+
+#form-wrapper form div.name {
+  width: 47.5%;
+}
+
+#form-wrapper form div#name-row {
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+#form-wrapper form div#last-name {
+  margin-left: 5%;
+}
+
+#form-wrapper form div label {
+  margin: auto;
+  width: 25%;
+}
+
+#form-wrapper form div.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#form-wrapper form button {
+  background-color: #d7dff7;
+  font-family: 'Raleway';
+  font-size: 20px;
+  color: #25304f;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-self: center;
+}
+
+#form-wrapper form div input, #form-wrapper form div textarea {
+  padding: 3px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border: solid #919dbf 2px;
+  height: 30px;
+  width: 75%;
+  font-family: 'Raleway';
+  font-size: 15px;
+  color: #25304f;
+}
+
+#form-wrapper form div textarea {
+  padding-top: 5px;
+  height: 100px;
+}
+
+#submission-message-wrapper h3 {
+  text-align: center;
+}
+
 
 /* Courses Page */
 
