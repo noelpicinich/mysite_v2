@@ -1,0 +1,512 @@
+@font-face {
+    font-family: 'Raleway'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Raleway-Bold'; /*a name to be used later*/
+    src: url('./fonts/Raleway/Raleway-SemiBold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Julius_Sans_One'; /*a name to be used later*/
+    src: url('./fonts/Julius_Sans_One/JuliusSansOne-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Lobster'; /*a name to be used later*/
+    src: url('./fonts/Lobster/Lobster-Regular.ttf'); /*URL to font*/
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  font-family: 'Raleway';
+}
+
+header {
+  width: 350px;
+  background-color: #e8edf4;
+  position: fixed;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1, h2 {
+  margin: 0px;
+}
+
+section {
+  display: block;
+  margin-left: 350px;
+}
+
+.section_title {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-size: 60px;
+  color: #1a2d4c;
+  padding: 15px 20px 20px 30px;
+}
+
+/* Nav Section */
+#me {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin: 75px;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+header h1 {
+  text-align: center;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Lobster';
+  font-size: 45px;
+  color: #1a2d4c;
+}
+
+nav {
+  height: 30%;
+}
+
+.nav {
+  list-style: none;
+  margin: 30px;
+  padding: 0px;
+  font-family: 'Julius_Sans_One';
+}
+
+#email {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+}
+
+#facebook, #linkedin, #bitbucket {
+  width: 35px;
+  height: 35px;
+  margin: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Home Section */
+
+#home {
+  padding: 30px;
+}
+
+#home h1 {
+  font-family: 'Julius_Sans_One';
+  font-size: 45px;
+  color: #919dbf;
+  text-align: center;
+}
+
+#slideshow {
+  display: flex;
+  justify-content: center;
+}
+
+#slideshow .button_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#left, #right {
+  height: 50px;
+  width: 50px;
+  align-self: center;
+}
+
+#current_img {
+  width: 80%;
+  max-width: 750px;
+  height: 80%;
+  margin: 5%;
+}
+
+#education {
+  display: flex;
+  justify-content: center;
+}
+
+#education img {
+  width: 125px;
+  height: 125px;
+}
+
+#education_text {
+  margin-left: 20px;
+}
+
+#education_text h2 {
+  font-family: 'Julius_Sans_One';
+  margin-top: 20px;
+}
+
+#header {
+  margin: 30px;
+  margin-top: 0px;
+}
+
+/* About Section */
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 25px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.cell_row {
+  display: flex;
+}
+
+.cell_row h1 {
+  align-self: center;
+  margin-left: 15px;
+  font-style: normal;
+  font-family: 'Julius_Sans_One';
+  display: block;
+}
+
+.cell_row#heading {
+  padding-bottom: 10px;
+}
+
+.cell_row .column {
+  width: 50%;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.border_bottom {
+  border-bottom: solid 1px #e8edf4;
+}
+
+.border_right {
+  border-right: solid 1px #e8edf4;
+}
+
+.cell ul {
+  padding-left: 20px;
+}
+
+img.school_icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  margin-top: 16px;
+}
+
+.school_text {
+  font-size: 13px;
+}
+
+.cell p {
+  margin-bottom: 0px;
+}
+
+.interest {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /*justify-content: center;*/
+  text-align: center;
+}
+
+.interest img {
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.interest p {
+  font-size: 14px;
+}
+
+ul#scholarships {
+  list-style: none;
+}
+
+#scholarships li {
+  margin-top: 10px;
+}
+
+img.check {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+
+.cell_row .skill {
+  align-self: center;
+  margin: 0px;
+}
+
+.body {
+  margin-top: 20px;
+}
+
+/* Professional Experience */
+#experience {
+  /*background-color: #F9FAFD;*/
+}
+
+#experience h3 {
+  font-family: 'Julius_Sans_One';
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a2d4c;
+  margin: 25px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.experiences {
+  display: flex;;
+}
+
+.experience {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  width: 295px;
+  /*height: 295px;*/
+  /*border: solid 2px #e8edf4;*/
+  /*border-radius: 160px;*/
+  text-align: center;
+  background-color: white;
+}
+
+.experience_text, .campus_text {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  align-self: center;
+  font-size: 18px;
+}
+
+.experience_text p, .campus_text p {
+  margin: 5px;
+}
+
+.experience img {
+  /*max-width: 200px;*/
+  /*max-height: 98px;*/
+  height: auto;
+  width: 50%;
+  margin: 0px 20px 5px 20px;
+  align-self: center;
+}
+
+.experience_text .company_info {
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  border-bottom: solid 2px #e8edf4;
+}
+
+#karaoke {
+  margin-top: 15px;
+}
+
+#nmb {
+  height: 101px;
+  width: 200px;
+}
+
+#tsl {
+  width: 200px;
+  height: 98px;
+}
+
+.experience img.itwomen {
+  width: 175px;
+  height: 80px;
+}
+
+#tutor {
+  height: 80px;
+  width: auto;
+}
+
+.experience a {
+  align-self: center;
+  padding: 10px 15px 10px 15px;
+  color: #99B1D2;
+  cursor: pointer;
+}
+
+.experience a:hover {
+  color: #7c97bc;
+}
+
+#teaching .experience {
+  height: 225px;
+  width: 225px;
+  padding-top: 0px;
+  /*border-radius: 165px;*/
+}
+
+/* On Campus Section */
+#campus {
+  /*background-color: #F9FAFD;*/
+}
+
+#scioly img {
+  width: 150px;
+  height: 138px;
+  align-self: center;
+}
+
+#auv img {
+  width: 130px;
+  height: 130px;
+  align-self: center;
+}
+
+#scioly b, #auv b {
+  font-size: 25px;
+}
+
+#scioly p, #auv p {
+  margin-bottom: 0px;
+}
+
+.date {
+  font-size: 14px;
+  font-family: 'Julius_Sans_One';
+  font-weight: bold;
+  color: grey;
+  margin-top: 8px;
+}
+
+.campus_text {
+  align-self: center;
+}
+
+.campus_description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#campus h2 {
+  font-family: 'Julius_Sans_One';
+  font-size: 30px;
+  font-weight: bold;
+  color: #1a2d4c;
+  margin-left: 30px;
+}
+
+.club, #memberships .cell_row {
+  flex: 1;
+  display: flex;
+}
+
+.club img {
+  max-width: 100px;
+  max-height: 50px;
+  margin-right: 20px;
+  align-self: center;
+}
+
+#memberships .club {
+  padding: 30px;
+}
+
+#memberships p {
+  align-self: center;
+  font-size: 18px;
+}
+
+/* Projects Section */
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 37.5%;
+}
+
+.auv_column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.project, .auv_project {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.website_project {
+  height: 100%;
+  width: 100%;
+}
+
+.auv_project a {
+
+}
+.auv_project img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.project_description {
+  text-align: center;
+  padding: 15px;
+}
+
+.project_description p {
+  margin: 0px;
+}
+
+p.project_title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
