@@ -28,4 +28,12 @@ $(document).ready(function() {
   $('#nmb_site').mouseout(function() {
     $('#nmb_site img').attr("src", 'images/nmb_site.jpg');
   });
+
+  //My Site v.1. Project
+  $('#my_site').mouseover(function() {
+    $('#my_site img').attr("src", 'images/my_site_hover.png');
+  });
+  $('#my_site').mouseout(function() {
+    $('#my_site img').attr("src", 'images/my_site.png');
+  });
 });

@@ -141,6 +141,7 @@ nav {
   height: 50px;
   width: 50px;
   align-self: center;
+  cursor: pointer;
 }
 
 #current_img {
