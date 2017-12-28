@@ -93,6 +93,19 @@ nav {
   font-family: 'Julius_Sans_One';
 }
 
+.active {
+  list-style: disc;
+  margin-left: 15px;
+}
+
+p#note {
+  font-size: 12px;
+  font-style: italic;
+  padding: 30px;
+  padding-top: 0px;
+  color: grey;
+}
+
 #email {
   text-align: center;
   margin-top: 40px;
@@ -159,15 +172,33 @@ nav {
 #education img {
   width: 125px;
   height: 125px;
+  align-self: center;
+}
+
+#education h2 {
+  margin: 0px;
+  font-family: 'Julius_Sans_One';
+}
+
+#education h3 {
+  margin: 5px 0px 5px 0px;
+  font-weight: lighter;
+}
+
+#education a {
+  padding: 8px 12px 8px 12px;
+  margin-top: 5px;
+  display: inline-block;
+  background-color: #d5dcef;
+}
+
+#education a:hover {
+  background-color: #b8c1db;
 }
 
 #education_text {
   margin-left: 20px;
-}
-
-#education_text h2 {
-  font-family: 'Julius_Sans_One';
-  margin-top: 20px;
+  align-self: center;
 }
 
 #header {
@@ -271,6 +302,10 @@ ul#scholarships {
 
 #scholarships li {
   margin-top: 10px;
+}
+
+#scholarships a:hover {
+  color: grey;
 }
 
 img.check {
@@ -455,6 +490,10 @@ img.check {
   align-self: center;
 }
 
+.club a:hover {
+  color: grey;
+}
+
 #memberships .club {
   padding: 30px;
 }
@@ -489,14 +528,10 @@ img.check {
   width: 100%;
 }
 
-.auv_project a {
-
-}
 .auv_project img {
   width: 100%;
   height: 100%;
 }
-
 
 .project_description {
   text-align: center;
