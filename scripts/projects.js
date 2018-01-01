@@ -36,4 +36,12 @@ $(document).ready(function() {
   $('#my_site').mouseout(function() {
     $('#my_site img').attr("src", 'images/my_site.png');
   });
+
+  //Ithaca Apple Harvest Festival Project
+  $('#ithaca_site').mouseover(function() {
+    $('#ithaca_site img').attr("src", 'images/ithaca_site_hover.jpg');
+  });
+  $('#ithaca_site').mouseout(function() {
+    $('#ithaca_site img').attr("src", 'images/ithaca_site.jpg');
+  });
 });

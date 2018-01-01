@@ -93,9 +93,13 @@ nav {
   font-family: 'Julius_Sans_One';
 }
 
-.active {
-  list-style: disc;
-  margin-left: 15px;
+.nav span {
+  display: none;
+}
+
+.nav .active span {
+  margin-right: 5px;
+  display: inline;
 }
 
 p#note {
