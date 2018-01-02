@@ -2,11 +2,11 @@ $(document).ready(function() {
   var height = $(window).height();
   var width = $(window).width();
 
-  $("header").css("height", height);
+  $("header").css("height", height - 40);
   $("section").css("min-height", height);
 
   $(window).resize( function() {
-    $("header").css("height", $(window).height());
+    $("header").css("height", $(window).height() - 40);
   });
 
   var home_top = $('#home').offset().top;

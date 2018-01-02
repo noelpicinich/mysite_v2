@@ -26,13 +26,20 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Raleway';
+  background-image: url('../images/background.jpeg');
+  background-position: center;
+  background-size: contain;
 }
 
 header {
-  width: 350px;
-  background-color: #e8edf4;
+  width: 280px;
+  background-color: #eaedf2;
   position: fixed;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 a {
@@ -51,7 +58,8 @@ h1, h2 {
 
 section {
   display: block;
-  margin-left: 350px;
+  padding-left: 320px;
+  background-color: white;
 }
 
 .section_title {
@@ -63,11 +71,17 @@ section {
 }
 
 /* Nav Section */
+.img_wrapper {
+  display: flex;
+  justify-content: center;
+  height: 33%;
+}
+
 #me {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  margin: 75px;
+  align-self: center;
   margin-bottom: 25px;
   margin-top: 40px;
 }
@@ -76,14 +90,14 @@ header h1 {
   text-align: center;
   font-weight: normal;
   margin-top: 0px;
-  margin-bottom: 20px;
   font-family: 'Lobster';
-  font-size: 45px;
+  font-size: 40px;
   color: #1a2d4c;
+  height: 6%;
 }
 
 nav {
-  height: 30%;
+  height: 36%;
 }
 
 .nav {
@@ -105,20 +119,34 @@ nav {
 p#note {
   font-size: 12px;
   font-style: italic;
-  padding: 30px;
-  padding-top: 0px;
   color: grey;
+  height: 5%;
+  text-align: center;
+  display: block;
 }
 
 #email {
+  font-family: sans-serif;
+  font-weight: lighter;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  color: #1a2d4c;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+#email:hover {
+  text-decoration: underline;
+}
+
+#email a {
+  align-self: center;
 }
 
 #icons {
   display: flex;
   justify-content: center;
+  height: 10%;
 }
 
 #facebook, #linkedin, #bitbucket {
@@ -135,18 +163,23 @@ p#note {
 
 #home {
   padding: 30px;
+  padding-left: 310px;
+  background-image: url('../images/background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: left;
 }
 
 #home h1 {
   font-family: 'Julius_Sans_One';
   font-size: 45px;
-  color: #919dbf;
-  text-align: center;
+  color: black;
 }
 
 #slideshow {
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 #slideshow .button_wrapper {
@@ -170,12 +203,12 @@ p#note {
 
 #education {
   display: flex;
-  justify-content: center;
+  margin-left: 20px;
 }
 
 #education img {
-  width: 125px;
-  height: 125px;
+  width: 100px;
+  height: 100px;
   align-self: center;
 }
 
@@ -201,7 +234,7 @@ p#note {
 }
 
 #education_text {
-  margin-left: 20px;
+  margin-left: 15px;
   align-self: center;
 }
 
@@ -414,13 +447,17 @@ img.check {
 
 .experience a {
   align-self: center;
-  padding: 10px 15px 10px 15px;
-  color: #99B1D2;
+  /*padding: 10px 15px 10px 15px;
+  color: #99B1D2;*/
   cursor: pointer;
+  padding: 8px 12px 8px 12px;
+  margin-top: 5px;
+  display: inline-block;
+  background-color: #d5dcef;
 }
 
 .experience a:hover {
-  color: #7c97bc;
+  background-color: #b8c1db;
 }
 
 #teaching .experience {
