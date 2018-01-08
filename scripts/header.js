@@ -4,6 +4,8 @@ $(document).ready(function() {
 
   $("header").css("height", height - 40);
   $("section").css("min-height", height);
+  $("#home").css("min-height", height-60);
+
 
   $(window).resize( function() {
     $("header").css("height", $(window).height() - 40);

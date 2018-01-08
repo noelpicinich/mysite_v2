@@ -107,6 +107,15 @@ nav {
   font-family: 'Julius_Sans_One';
 }
 
+.nav-item {
+  padding: 15px 0 15px 0;
+  border-bottom: solid 1px grey;
+}
+
+#projects_item {
+  border: 0px;
+}
+
 .nav span {
   display: none;
 }
@@ -222,20 +231,71 @@ p#note {
   font-weight: lighter;
 }
 
-#education a {
+#education p {
   padding: 8px 12px 8px 12px;
   margin-top: 5px;
   display: inline-block;
   background-color: #d5dcef;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-#education a:hover {
+#education p:hover {
   background-color: #b8c1db;
 }
 
 #education_text {
   margin-left: 15px;
   align-self: center;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  padding: 100px 0px 100px 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  padding-top: 18px;
+  border: 1px solid #888;
+}
+
+.modal-content .section_title {
+  padding: 0 0 15px 10px;
+}
+
+.modal-content th {
+  font-family: 'Julius_Sans_One';
+  padding: 5px 10px 5px 10px;
+  text-align: left;
+  background-color: #eaedf2;
+}
+
+.modal-content td {
+  padding: 5px 10px 0 10px;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #header {
@@ -274,7 +334,7 @@ p#note {
   display: block;
 }
 
-.cell_row#heading {
+.cell_row.heading {
   padding-bottom: 10px;
 }
 
@@ -545,6 +605,27 @@ img.check {
 }
 
 /* Projects Section */
+#filter {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  margin-left: 5px;
+}
+
+input {
+  border: solid 1px grey;
+  border-radius: 0px;
+}
+
+.hidden {
+  display: none;
+}
+
 .column {
   display: flex;
   flex-direction: column;

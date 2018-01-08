@@ -9,6 +9,7 @@
   <script src="scripts/slideshow.js" type="text/javascript"></script>
   <script src="scripts/projects.js" type="text/javascript"></script>
   <script src="scripts/scroll.js" type="text/javascript"></script>
+  <script src="scripts/modal.js" type="text/javascript"></script>
   <link rel="stylesheet" href="styles/all.css" type="text/css">
 </head>
 
@@ -20,12 +21,13 @@
     <h1>Noel Picinich</h1>
     <nav>
       <ul class="nav">
-        <li id="home_item" class="nav-item active"><a href="index.html#home"><span>></span>Home</a></li><hr/>
-        <li id="about_item" class="nav-item"><a href="index.html#about"><span>></span>About</a></li><hr/>
-        <li id="experience_item" class="nav-item"><a href="index.html#experience"><span>></span>Professional Experience</a></li><hr/>
-        <li id="campus_item" class="nav-item"><a href="index.html#campus"><span>></span>On Campus</a></li><hr/>
+        <li id="home_item" class="nav-item active"><a href="index.html#home"><span>></span>Home</a></li>
+        <li id="about_item" class="nav-item"><a href="index.html#about"><span>></span>About</a></li>
+        <li id="experience_item" class="nav-item"><a href="index.html#experience"><span>></span>Professional Experience</a></li>
+        <li id="campus_item" class="nav-item"><a href="index.html#campus"><span>></span>On Campus</a></li>
         <li id="projects_item" class="nav-item"><a href="index.html#projects"><span>></span>Projects</a></li>
-      </nav>
+      </ul>
+    </nav>
     <div id="email">
       <a target="_blank" href="mailto:nmp53@cornell.edu">nmp53@cornell.edu</a>
     </div>
@@ -38,6 +40,102 @@
     <p id="note">noelpicinich.com was developed from scratch using HTML, CSS, and jQuery</p>
   </header>
 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span id="exit" class="close">&times;</span>
+    <h1 class="section_title">Courses</h1>
+    <table>
+      <tr>
+        <th>Course</th>
+        <th>Description</th>
+        <th>Term</th>
+        <th>Credit Hours</th>
+      </tr>
+      <tr>
+        <td>ARTH 1156</td>
+        <td>Visual History of Women Reading</td>
+        <td>Fall 2016</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>CHEM 2090</td>
+        <td>Engineering General Chemistry</td>
+        <td>Fall 2016</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 1110</td>
+        <td>Intro to Computing Using Python</td>
+        <td>Fall 2016</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>MATH 1920</td>
+        <td>Multivariable Calculus for Engineers</td>
+        <td>Fall 2016</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>AMST 2655</td>
+        <td>Latinos in the USA</td>
+        <td>Spring 2017</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>CS 2043</td>
+        <td>UNIX Tools and Scripting</td>
+        <td>Spring 2017</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>CS 2110</td>
+        <td>Object Oriented Programming and Data Structures</td>
+        <td>Spring 2017</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Math 2940</td>
+        <td>Linear Algebra for Engineers</td>
+        <td>Spring 2017</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>PHYS 1112</td>
+        <td>Physics 1: Mechanics and Heat</td>
+        <td>Spring 2017</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 1300</td>
+        <td>Intro to Web Development</td>
+        <td>Fall 2017</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>CS 1620</td>
+        <td>Visual Imaging in an Electronic Age</td>
+        <td>Fall 2017</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>CS 2800</td>
+        <td>Discrete Structures</td>
+        <td>Fall 2017</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>PHYS 2213</td>
+        <td>Physics 2: Electricity and Magnetism</td>
+        <td>Fall 2017</td>
+        <td>4</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
   <section id="home">
     <div id="header">
       <h1>Developer. <br/>Designer. <br/>Life-long Learner.</h1>
@@ -51,7 +149,7 @@
         <h2>Cornell University</h2>
         <h3>Computer Science 2020</h3>
         <div>
-          <a class="button" href="courses.html">See Courses</a>
+          <p id="courses_btn" class="button">See Courses</p>
         </div>
       </div>
     </div>
@@ -71,7 +169,7 @@
     <div class="rows">
       <div class="row">
         <div class="cell border_bottom border_right">
-          <div id="heading" class="cell_row">
+          <div class="heading cell_row">
             <img src="images/profile.png" alt="Profile Icon">
             <h1>Summary</h1>
           </div>
@@ -80,7 +178,7 @@
             expanding and sharing my skills.</p>
         </div>
         <div class="cell border_bottom border_right">
-          <div id="heading" class="cell_row">
+          <div class="heading cell_row">
             <img src="images/education.png" alt="Education Icon">
             <h1>Education</h1>
           </div>
@@ -101,7 +199,7 @@
           </div>
         </div>
         <div class="cell border_bottom">
-          <div id="heading" class="cell_row">
+          <div class="heading cell_row">
             <img src="images/skills.png" alt="Skills Icon">
             <h1>Skills</h1>
           </div>
@@ -129,7 +227,7 @@
       </div>
       <div class="row">
         <div class="cell border_right">
-          <div id="heading" class="cell_row">
+          <div class="heading cell_row">
             <img src="images/code.png" alt="Code Icon">
             <h1>Programming</h1>
           </div>
@@ -157,7 +255,7 @@
           </div>
         </div>
         <div class="cell border_right">
-          <div id="heading" class="cell_row">
+          <div class="heading cell_row">
             <img src="images/interests.png" alt="Star Icon">
             <h1>Interests</h1>
           </div>
@@ -191,7 +289,7 @@
           </div>
         </div>
         <div class="cell">
-          <div id="heading" class="cell_row">
+          <div class="heading cell_row">
             <img src="images/sponsors.png" alt="Sponsors Icon">
             <h1>Sponsors</h1>
           </div>
@@ -199,7 +297,7 @@
             <li><a href="http://www.edwardtbedfordfoundation.org/" target="_blank">Edward T. Bedford Foundation</a></li>
             <li><a href="https://itwomen.org/" target="_blank">ITWomen Scholarship</a></li>
             <li><a href="http://www.scholarship.org/" target="_blank">George Snow Scholarship Fund</a></li>
-            <li><a href="http://www.jmrf.org/" target="_blank">Jan M. Rubin Foundation</li>
+            <li><a href="http://www.jmrf.org/" target="_blank">Jan M. Rubin Foundation</a></li>
             <li><a href="http://www.palmbeachpost.com/pathfinder/" target="_blank">Palm Beach Post Pathfinder Award</a></li>
             <li><a href="http://societyofwomenengineers.swe.org/" target="_blank">Society of Women Engineers</a></li>
           </ul>
@@ -215,7 +313,7 @@
     <h3>Full-Stack Development</h3>
     <div class="experiences">
       <div class="experience border_right">
-        <img id="tsl" class="company" src="images/tsl.png">
+        <img id="tsl" class="company" src="images/tsl.png" alt="The SilverLogic Logo">
         <div class="experience_text">
           <p class="company_info"><b>The SilverLogic</b> | Boca Raton, FL</p>
           <p><i>Software Engineering Intern</i><br/>
@@ -224,7 +322,7 @@
         <a href="index.html#projects">See Project</a>
       </div>
       <div class="experience border_right">
-        <img id="nmb" class="company" src="images/nmb.png">
+        <img id="nmb" class="company" src="images/nmb.png" alt="NMB Media Logo">
         <div class="experience_text">
           <p class="company_info"><b>NMB Media</b> | Fort Lauderdale, FL</p>
           <p><i>Freelance Web Development</i><br/>
@@ -245,19 +343,19 @@
     <h3>Teaching</h3>
     <div id="teaching" class="experiences">
       <div class="experience border_right">
-        <img class="itwomen" class="company" src="images/itwomen.gif" alt="ITWomen Logo">
+        <img class="itwomen company" src="images/itwomen.gif" alt="ITWomen Logo">
         <div class="experience_text">
           <p class="company_info"><b>ITWomen</b> | Fort Lauderdale, FL</p>
           <p><i>Girls Coding Camp Instructor</i><br/>
-            <span class="date">June 2017<span></p>
+            <span class="date">June 2017</span></p>
         </div>
       </div>
       <div class="experience border_right">
-        <img class="itwomen" class="company" src="images/itwomen.gif" alt="ITWomen Logo">
+        <img class="itwomen company" src="images/itwomen.gif" alt="ITWomen Logo">
         <div class="experience_text">
           <p class="company_info"><b>ITWomen</b> | Fort Lauderdale, FL</p>
           <p><i>Girls Coding Camp Counselor</i><br/>
-            <span class="date">June 2016<span></p>
+            <span class="date">June 2016</span></p>
         </div>
       </div>
       <div class="experience">
@@ -265,7 +363,7 @@
         <div class="experience_text">
           <p class="company_info"><b>Boca High</b> | Boca Raton, FL</p>
           <p><i>Math and Science Tutor</i><br/>
-            <span class="date">August 2014 - May 2016<span></p>
+            <span class="date">August 2014 - May 2016</span></p>
         </div>
       </div>
     </div>
@@ -334,31 +432,46 @@
             <a href="http://swe.cornell.edu/"><p>Society of Women Engineers</p></a>
           </div>
       </div>
+      </div>
     </div>
   </section>
 
   <section id="projects">
     <h1 class="section_title">Projects</h1>
+    <p id="filter">Filter Projects:
+      <span><input type="checkbox" id="2016"/><label for="2016">2016</label></span>
+      <span><input type="checkbox" id="2017"/><label for="2017">2017</label></span>
+      <span><input type="checkbox" id="web"/><label for="web">HTML, CSS</label></span>
+      <span><input type="checkbox" id="js"/><label for="js">JavaScript</label></span>
+      <span><input type="checkbox" id="php"/><label for="php">PHP</label></span>
+      <span><input type="checkbox" id="python"/><label for="python">Python</label></span>
+      <span><input type="checkbox" id="jquery"/><label for="jquery">jQuery</label></span>
+      <span><input type="checkbox" id="react"/><label for="react">React</label></span>
+    </p>
     <div class="row">
       <div class="column">
-        <a href="http://www.nmbdigital.com/" target="_blank">
-          <div id="nmb_site" class="project">
+        <div id="nmb_site" class="project">
+          <a href="http://www.nmbdigital.com/" target="_blank">
             <img class="website_project" src="images/nmb_site.jpg" alt="NMB Website Image">
-            <div class="project_description">
-              <p class="project_title">NMB Media website</p>
-              <p class="date">2017</p>
-            </div>
+          </a>
+          <div class="project_description">
+            <p class="project_title">NMB Media website</p>
+            <p class="date">2017</p>
           </div>
-        </a>
+        </div>
         <div id="khouse_site" class="project">
-          <img class="website_project" src="images/khouse_site.jpg" alt="K-House Website Image">
+          <a href="#" target="_blank">
+            <img class="website_project" src="images/khouse_site.jpg" alt="K-House Website Image">
+          </a>
           <div class="project_description">
             <p class="project_title">K-House Karaoke website</p>
             <p class="date">2017</p>
           </div>
         </div>
-        <div id="my_site_2"class="project">
-          <img class="website_project" src="images/my_site_2.jpg" alt="noelpicinich.com Image">
+        <div id="my_site_2" class="project">
+          <a href="old_site/index.html" target="_blank">
+            <img class="website_project" src="images/my_site_2.jpg" alt="noelpicinich.com Image">
+          </a>
           <div class="project_description">
             <p class="project_title">Portfolio website v.2.</p>
             <p class="date">2017</p>
@@ -366,26 +479,28 @@
         </div>
       </div>
       <div class="column">
-        <a href="old_site/index.html" target="_blank">
-          <div id="my_site" class="project">
+        <div id="my_site" class="project">
+          <a href="old_site/index.html" target="_blank">
             <img class="website_project" src="images/my_site.png" alt="noelpicinich.com Image">
-            <div class="project_description">
-              <p class="project_title">Portfolio website v.1.</p>
-              <p class="date">2017</p>
-            </div>
+          </a>
+          <div class="project_description">
+            <p class="project_title">Portfolio website v.1.</p>
+            <p class="date">2017</p>
           </div>
-        </a>
-        <a href="ithaca_site/index.html" target="_blank">
-          <div id="ithaca_site" class="project">
+        </div>
+        <div id="ithaca_site" class="project">
+          <a href="ithaca_site/index.html" target="_blank">
             <img class="website_project" src="images/ithaca_site.jpg" alt="Ithaca Apple Harvest Festival Website Image">
-            <div class="project_description">
-              <p class="project_title">Ithaca Apple Harvest Festival website</p>
-              <p class="date">2017</p>
-            </div>
+          </a>
+          <div class="project_description">
+            <p class="project_title">Ithaca Apple Harvest Festival website</p>
+            <p class="date">2017</p>
           </div>
-        </a>
+        </div>
         <div id="current_project" class="project">
-          <img class="website_project" src="images/current_project.png" alt="noelpicinich.com Image">
+          <a href="ithaca_site/index.html" target="_blank">
+            <img class="website_project" src="images/current_project.png" alt="noelpicinich.com Image">
+          </a>
           <div class="project_description">
             <p class="project_title">Coup Web App (current project)</p>
             <p class="date">2017</p>
@@ -395,7 +510,7 @@
       <div class="auv_column">
         <a target="_blank" href="docs/auv1.pdf" download>
           <div id="auv1" class="auv_project">
-              <img class="auv_project_img" src="images/auv1.png" alt="CUAUV Project Image">
+            <img class="auv_project_img" src="images/auv1.png" alt="CUAUV Project Image">
           </div></a>
         <a target="_blank" href="docs/auv2.pdf" download>
           <div id="auv2" class="auv_project">
