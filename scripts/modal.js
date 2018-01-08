@@ -9,15 +9,20 @@ $(document).ready(function() {
   });
 
   $('#exit').click(function() {
+    $('.not_cs').show();
     $('.modal').hide();
   });
 
   $('.modal').click(function(event) {
     console.log(event.target.className);
       if (event.target.className === 'modal') {
+          $('.not_cs').show();
           $('.modal').hide();
-          console.log('clicked outside');
       }
+  });
+
+  $('#courses_filter').click(function() {
+    $('.not_cs').toggle();
   });
 
 });

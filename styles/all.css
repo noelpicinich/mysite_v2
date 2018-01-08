@@ -284,6 +284,16 @@ p#note {
   padding: 5px 10px 0 10px;
 }
 
+#courses_filter {
+  margin-top: 0px;
+  cursor: pointer;
+}
+
+small {
+  display: block;
+  margin: 15px 0 0 10px;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
